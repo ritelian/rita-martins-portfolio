@@ -1,4 +1,4 @@
-# Rita Martins — ISMAT Portfolio V0.3
+# Rita Martins — Portfolio V0.3
 
 Static GitHub Pages-ready portfolio.
 
