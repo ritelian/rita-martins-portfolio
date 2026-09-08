@@ -61,6 +61,16 @@ model-viewer{position:relative;z-index:1;width:100%;height:100%;background:trans
 .model-label{position:absolute;z-index:3;left:22px;bottom:22px;background:var(--acid);padding:10px 13px;font-size:10px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}.model-hint{position:absolute;z-index:3;right:22px;bottom:24px;color:#fff;font-size:9px;letter-spacing:.1em;text-transform:uppercase;opacity:.66}
 .work-note{margin-top:48px;padding:22px 0 0;border-top:1px solid var(--line);font-size:12px;color:var(--muted);max-width:600px}
 
+/* Additional learning and media projects */
+.work-nav{display:flex;flex-wrap:wrap;gap:10px;margin:-30px 0 60px}.work-nav a{border:1px solid var(--line);padding:11px 14px;font-size:14px;font-weight:700}.work-nav a:hover{background:var(--acid)}
+.project-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:start}.project-detail figure{margin:0}.project-detail img,.project-detail video{border-radius:var(--radius);background:#171a18;width:100%;height:auto}.project-detail figcaption{font-size:13px;color:var(--muted);line-height:1.5;margin-top:14px}.project-detail .facts>div{font-size:15px}.project-detail .facts dt{font-size:12px}
+.learning-notes{border-top:1px solid var(--ink);padding-top:22px}.learning-notes h4{font-size:22px;letter-spacing:-.03em;margin:0 0 12px}.learning-notes p{font-size:16px;line-height:1.6;margin:0 0 28px;color:#444844}
+.prototype-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.prototype-card{display:flex;flex-direction:column;border:1px solid var(--line);padding:28px;min-height:290px;transition:background .2s}.prototype-card:hover{background:var(--acid)}.prototype-card h3{font-size:28px;line-height:1.1;letter-spacing:-.03em;margin:0 0 20px}.prototype-card p{font-size:16px;line-height:1.55;margin:0 0 24px}.prototype-card span{margin-top:auto;font-size:14px;font-weight:750}.prototype-block{padding-bottom:60px}.prototype-block h2{font-size:clamp(36px,4vw,56px);letter-spacing:-.04em;line-height:1.05;margin:0 0 32px}
+.work-nav a:focus-visible,.prototype-card:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
+article[id],.prototype-block[id]{scroll-margin-top:90px}
+@media(max-width:1000px){.project-detail{grid-template-columns:1fr;gap:36px}.prototype-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.prototype-grid{grid-template-columns:1fr}.work-nav{margin-top:-10px;margin-bottom:40px}.project-detail .facts>div{grid-template-columns:92px 1fr;gap:14px}.prototype-card{min-height:230px}}
+
 /* VIDEOMAPPING */
 .vm-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:70px;align-items:start}.vm-media{display:grid;grid-template-columns:1fr 1fr;gap:14px}.vm-media video{height:590px;object-fit:cover;border-radius:22px;background:#151716}.vm-media video:nth-child(2){margin-top:90px;height:500px}.gallery{display:grid;grid-template-columns:1.55fr .8fr .8fr;gap:14px;margin-top:28px}.gallery figure{margin:0}.gallery img{height:390px;object-fit:cover;border-radius:20px}.gallery figure:nth-child(2) img,.gallery figure:nth-child(3) img{height:310px;margin-top:80px}.gallery figcaption{font-size:9px;letter-spacing:.1em;text-transform:uppercase;font-weight:850;margin-top:10px;color:var(--muted)}
 .project-film{display:inline-flex;gap:10px;align-items:center;margin-top:28px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:900;border-bottom:1px solid var(--ink);padding-bottom:4px}
@@ -120,6 +130,7 @@ footer{padding:32px 0;border-top:1px solid var(--ink);font-size:10px;letter-spac
 
 <section id="work" class="wrap section">
  <div class="section-head reveal"><span class="kicker">01 / SELECTED WORK</span><h2>Case studies</h2></div>
+ <nav class="work-nav" aria-label="Explore added projects"><a href="#void">VOID / 3D</a><a href="#mod-9966">3D learning activity</a><a href="#ai-learning">AI learning design</a><a href="#generative-video">Generative video</a><a href="#web-prototypes">Web projects</a></nav>
 
  <article class="case case-3d">
   <div class="case-copy reveal">
@@ -191,6 +202,27 @@ footer{padding:32px 0;border-top:1px solid var(--ink);font-size:10px;letter-spac
    <div class="model-label">LIVE 3D / VOID GLB</div><div class="model-hint">drag to rotate · pinch / scroll to zoom</div>
   </div>
  </article>
+ <article id="mod-9966" class="case project-detail">
+  <div class="case-copy reveal"><div class="case-index">06</div><div class="tags"><span class="tag">Learning design</span><span class="tag">AI-assisted 3D</span><span class="tag">Meshy</span></div><h3>MOD 9966 — a practical 3D learning activity</h3><p class="case-intro">A guided activity for 3D Editing that takes learners from a scene description to an exported environment and a short video presentation.</p><dl class="facts"><div><dt>Contribution</dt><dd>Learning activity design · visual instructions</dd></div><div><dt>Process</dt><dd>Scene and negative prompts · refinement · GLB export · MP4 presentation</dd></div><div><dt>Tools</dt><dd>Meshy AI · ImageToSTL</dd></div><div><dt>Focus</dt><dd>Making a creative AI workflow understandable through practical steps</dd></div></dl></div>
+  <figure class="reveal"><a href="assets/mod-9966-learning-activity.png" target="_blank" rel="noopener" aria-label="Open the original MOD 9966 learning activity"><img src="assets/mod-9966-learning-activity.png" alt="MOD 9966 activity sheet in Portuguese, with a cave environment and instructions for prompting, refinement, GLB export and MP4 presentation" loading="lazy" width="1263" height="893"></a><figcaption>Original learning activity · 3D Editing. Select the image to read the full-size sheet.</figcaption></figure>
+ </article>
+
+ <article id="ai-learning" class="case project-detail">
+  <div class="case-copy reveal"><div class="case-index">07</div><div class="tags"><span class="tag">Learning experience design</span><span class="tag">HTML / CSS</span><span class="tag">AI-assisted development</span></div><h3>From workshop content to digital learning</h3><p class="case-intro">Designing AI learning experiences and adapting workshop and masterclass content into HTML-based learning resources, using AI-assisted development.</p><dl class="facts"><div><dt>Contribution</dt><dd>Learning design · content adaptation · web implementation with AI assistance</dd></div><div><dt>Practice</dt><dd>Learning activities · assessments · collaboration with subject-matter experts</dd></div><div><dt>Focus</dt><dd>Clear instructions, practical application and human review</dd></div></dl></div>
+  <div class="learning-notes reveal"><h4>Structure the learning</h4><p>Translate learning objectives into a sequence of explanations, practical activities and opportunities to check understanding.</p><h4>Adapt the delivery</h4><p>Use HTML and CSS to turn teaching material into a digital experience that learners can navigate at their own pace.</p><h4>Keep editorial responsibility</h4><p>Use AI to support implementation while retaining responsibility for the content, instructional choices and review of the final experience.</p></div>
+ </article>
+
+ <article id="generative-video" class="case project-detail">
+  <div class="case-copy reveal"><div class="case-index">08</div><div class="tags"><span class="tag">Generative video</span><span class="tag">Runway Gen-2</span><span class="tag">Visual direction</span></div><h3>Generative motion — automotive visual studies</h3><p class="case-intro">Exploring AI-generated moving images for a motorsport-themed promotional concept, with attention to lighting, atmosphere and visual consistency.</p><dl class="facts"><div><dt>Contribution</dt><dd>Visual direction · AI video generation · asset exploration</dd></div><div><dt>Tools</dt><dd>Runway Gen-2 · Adobe Firefly</dd></div><div><dt>Output</dt><dd>Short generated video studies and supporting image assets</dd></div></dl></div>
+  <figure class="reveal"><video controls muted playsinline preload="metadata" poster="assets/generative-video-poster.jpg" aria-label="AI-generated automotive video study"><source src="assets/generative-video-study.mp4" type="video/mp4">Your browser does not support embedded video.</video><figcaption>Selected Runway Gen-2 study · AI-generated imagery.</figcaption></figure>
+ </article>
+
+ <section id="web-prototypes" class="prototype-block" aria-labelledby="prototype-title"><h2 id="prototype-title">Interactive web projects</h2><div class="prototype-grid">
+  <a class="prototype-card" href="https://github.com/ritelian/Amazonia" target="_blank" rel="noopener"><h3>Amazónia</h3><p>A web companion to an immersive exhibition about flora and fauna, connecting visual storytelling with an arts experience.</p><span>HTML · CSS · JavaScript / View project ↗</span></a>
+  <a class="prototype-card" href="https://github.com/ritelian/atelier-sul-discovery" target="_blank" rel="noopener"><h3>AI Discovery</h3><p>An interactive discovery questionnaire for discussing workflows and identifying possible applications of AI.</p><span>HTML · CSS · JavaScript / View project ↗</span></a>
+  <a class="prototype-card" href="https://github.com/ritelian/IA_no_Ensino_Artistico" target="_blank" rel="noopener"><h3>AI in Arts Education</h3><p>A web presentation communicating research and practice around generative AI in visual arts education.</p><span>Research communication / View project ↗</span></a>
+  <a class="prototype-card" href="https://dodiebegin.pt/en/grape-gin/" target="_blank" rel="noopener"><h3>Do Diebe Gin</h3><p>Bilingual product pages and visual content, combining moving imagery with product information in Portuguese and English.</p><span>Web design · Visual content / Visit website ↗</span></a>
+ </div></section>
 </section>
 
 <section id="research" class="research"><div class="wrap research-grid">
