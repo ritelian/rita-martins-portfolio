@@ -1,6 +1,13 @@
-# Rita Martins — Portfolio V0.3
+# Rita Martins — Portfolio
 
 Static GitHub Pages-ready portfolio.
+
+## September 2026 portfolio update
+- Eight case studies, including VOID, MOD 9966, AI-assisted learning redesign and a generative video study.
+- Two actual interactive GLB models and links to four existing public web projects.
+- Original MOD 9966 activity preview and supplied Runway video excerpt.
+- Learning work described at a general level; no internal workshop files, source code, screenshots, client prompts or confidential production metrics are included.
+- Published through the existing GitHub Pages configuration: `main`, repository root.
 
 ## What changed in V0.3
 - Native local MP4 hero video (no YouTube iframe dependency)
